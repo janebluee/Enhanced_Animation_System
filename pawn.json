@@ -1,0 +1,39 @@
+{
+    "user": "janebluee",
+    "repo": "Enhanced_Animation_Sytem",
+    "entry": "test.pwn",
+    "output": "test.amx",
+    "dependencies": [
+        "openmultiplayer/omp-stdlib"
+    ],
+    "runtime": {
+        "version": "openmp",
+        "mode": "server",
+        "rcon_password": "password",
+        "port": 7777,
+        "hostname": "Enhanced Animations Test Server",
+        "maxplayers": 50,
+        "language": "English"
+    },
+    "resources": [
+        {
+            "name": "Enhanced_Animation_Sytem",
+            "version": "1.0.0",
+            "platform": "any",
+            "files": {
+                "include": "src/*.inc"
+            }
+        }
+    ],
+    "builds": [
+        {
+            "name": "test",
+            "includes": [
+                "src"
+            ],
+            "constants": {
+                "MAX_PLAYERS": "50"
+            }
+        }
+    ]
+}
